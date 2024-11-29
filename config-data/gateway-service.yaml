@@ -25,7 +25,6 @@ spring:
           uri: lb://Loan
           predicates:
             - Path=/api/loan/**
-            - Path=/api/document/**
         - id: SimulateLoan
           uri: lb://SimulateLoan
           predicates:
