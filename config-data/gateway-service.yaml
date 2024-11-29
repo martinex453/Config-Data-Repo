@@ -21,6 +21,9 @@ spring:
           uri: lb://User
           predicates:
             - Path=/api/user/**
+        - id: Document
+          uri: lb://Document
+          predicates:
             - Path=/api/document/**
         - id: Loan
           uri: lb://Loan
