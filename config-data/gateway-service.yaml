@@ -41,3 +41,15 @@ spring:
           uri: lb://RequestTraking
           predicates:
             - Path=/api/requestTraking/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS 
+            allowedHeaders:
+              - "*"
