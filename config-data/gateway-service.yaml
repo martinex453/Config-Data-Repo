@@ -18,7 +18,7 @@ spring:
           enabled: true
       routes:
         - id: User
-          uri: lb://USER
+          uri: lb://user
           predicates:
             - Path=/api/user/**
         - id: Document
